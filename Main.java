@@ -15,15 +15,15 @@ public class Main {
         CSVParser<TestBig> parserBig = new CSVParser<>(testBig);
 
         File file = new File("src/packag/e/cities.csv");
-        File fileBig = new File("src/packag/e/5m Sales Records.csv");
+//        File fileBig = new File("src/packag/e/5m Sales Records.csv");
 
         ArrayList<Test> result = parser.Parse(file);
         for(int i = 0; i < result.size(); i++)
             System.out.println(result.get(i).LatD);
 
-        ArrayList<TestBig> resultBig = parserBig.Parse(fileBig);
-        for(int i = 0; i < resultBig.size(); i++)
-            System.out.println(resultBig.get(i).country);
+//        ArrayList<TestBig> resultBig = parserBig.Parse(fileBig);
+//        for(int i = 0; i < resultBig.size(); i++)
+//            System.out.println(resultBig.get(i).country);
 
     }
 }
